@@ -6,30 +6,37 @@ class FootballController extends GetxController {
     FootballPlayer(
       name: "Lionel Messi",
       profileImage:
-          "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Lionel_Messi.jpg",
+          "https://i.pinimg.com/736x/8b/c8/b8/8bc8b8d5f77fb6563158faba6d782101.jpg",
       position: "Forward",
       jerseyNumber: 10,
     ),
     FootballPlayer(
       name: "Cristiano Ronaldo",
       profileImage:
-          "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
+          "https://i.pinimg.com/736x/d4/44/74/d444741c23262349c05fc4e805db4b61.jpg",
       position: "Forward",
       jerseyNumber: 7,
     ),
     FootballPlayer(
       name: "Neymar Jr",
       profileImage:
-          "https://upload.wikimedia.org/wikipedia/commons/c/c4/Neymar_2018.jpg",
+          "https://i.pinimg.com/1200x/66/8a/47/668a473311301543e325c44a858e9875.jpg",
       position: "Forward",
       jerseyNumber: 11,
     ),
     FootballPlayer(
       name: "Kylian Mbappé",
       profileImage:
-          "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kylian_Mbappé_2019.jpg",
+          "https://i.pinimg.com/736x/6b/1c/c5/6b1cc5de877e5cfc7259b75c90af44db.jpg",
       position: "Forward",
       jerseyNumber: 7,
+    ),
+    FootballPlayer(
+      name: "Robert Lewandowski",
+      profileImage:
+          "https://i.pinimg.com/1200x/bf/72/8b/bf728b20628de224555a79ee39e7e3eb.jpg",
+      position: "Striker",
+      jerseyNumber: 9,
     ),
   ].obs;
 

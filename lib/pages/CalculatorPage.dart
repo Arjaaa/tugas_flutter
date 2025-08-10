@@ -78,6 +78,14 @@ class CalculatorPage extends StatelessWidget {
               textColor: Colors.white,
               textt: "Move to Football players ",
               press: () {
+                Get.snackbar(
+                  "Info",
+                  "Item clicked",
+                  snackPosition: SnackPosition.TOP,
+                  backgroundColor: Colors.blueAccent,
+                  colorText: Colors.white,
+                  duration: Duration(seconds: 2),
+                );
                 calculatorController.clear();
                 Get.toNamed(AppRoutes.footballplayers);
               },
