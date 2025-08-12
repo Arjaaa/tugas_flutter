@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan1/controller/calculator_controller.dart';
+import 'package:latihan1/routes/routes.dart';
 import 'package:latihan1/widget/widgetbutton.dart';
 import 'package:latihan1/widget/textfield.dart';
 import 'package:get/get.dart';
@@ -75,8 +76,11 @@ class CalculatorPage extends StatelessWidget {
             SizedBox(height: 20),
             CustomButton(
               textColor: Colors.white,
-              textt: "Clear",
-              press: calculatorController.clear,
+              textt: "Move to Football players ",
+              press: () {
+                calculatorController.clear();
+                Get.toNamed(AppRoutes.footballplayers);
+              },
               color: Colors.blueAccent,
             ),
           ],
