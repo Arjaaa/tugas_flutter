@@ -42,6 +42,6 @@ class FootballController extends GetxController {
 
   void updatePlayer(int index, FootballPlayer newPlayer) {
     players[index] = newPlayer;
-    players.refresh(); // pastikan update reactive list
+    players.refresh();
   }
 }

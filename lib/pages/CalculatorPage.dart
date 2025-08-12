@@ -82,7 +82,7 @@ class CalculatorPage extends StatelessWidget {
                   "Info",
                   "Item clicked",
                   snackPosition: SnackPosition.TOP,
-                  backgroundColor: Colors.blueAccent,
+                  backgroundColor: Colors.blueGrey,
                   colorText: Colors.white,
                   duration: Duration(seconds: 2),
                 );
