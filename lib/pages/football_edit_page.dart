@@ -90,11 +90,43 @@ class FootballEditPage extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
+                  // Validasi form
+                  if (editController.nameController.text.isEmpty ||
+                      editController.profileImageController.text.isEmpty ||
+                      editController.positionController.text.isEmpty ||
+                      editController.jerseyNumberController.text.isEmpty) {
+                    // Tampilkan snackbar di atas
+                    Get.snackbar(
+                      "Error",
+                      "Semua field harus diisi!",
+                      snackPosition: SnackPosition.TOP,
+                      backgroundColor: Colors.redAccent,
+                      colorText: Colors.white,
+                      margin: EdgeInsets.all(10),
+                      borderRadius: 8,
+                      duration: Duration(seconds: 2),
+                    );
+                    return;
+                  }
+
+                  // Kalau semua field terisi, update data
                   footballController.updatePlayer(
                     args['index'],
                     editController.updatedPlayer,
                   );
+
                   Get.back();
+                  // Snackbar sukses
+                  Get.snackbar(
+                    "Berhasil",
+                    "Data pemain berhasil diperbarui!",
+                    snackPosition: SnackPosition.TOP,
+                    backgroundColor: Colors.green,
+                    colorText: Colors.white,
+                    margin: EdgeInsets.all(10),
+                    borderRadius: 8,
+                    duration: Duration(seconds: 2),
+                  );
                 },
                 child: Text('Save', style: TextStyle(fontSize: 18)),
               ),
